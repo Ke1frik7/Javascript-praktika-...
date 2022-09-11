@@ -1,0 +1,333 @@
+*::before, *::after, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: url("./Images/istockphoto-1250152532-612x612.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+    padding: 20px auto;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.nav_btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav_btns button{
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border: 1px solid transparent;
+    background: rgba(128, 128, 128, 0.48);
+    border-radius: 7px;
+    transition: all 0.5s ease;
+    transform: translateY(0px);
+    color: #fff;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.355);
+}
+.nav_btns button:hover{
+    background: rgba(0, 255, 255, 0.4);
+    transform: translateY(-6px);
+}
+.result{
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    box-shadow: inset 0px 0px 50px 100px rgba(0, 0, 0, 0.494);
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+.btn_fixed{
+    width: 100%;
+    /* border: 1px solid black; */
+    position: relative;
+    height: auto;
+}
+.btn_fixed button{
+    float: right;
+    position: absolute;
+    top: 84vh;
+    left: 95%;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    border: 1px solid transparent;
+    background: rgba(128, 128, 128, 0.48);
+    border-radius: 7px;
+    transition: all 0.5s ease;
+    transform: translateY(0px);
+    color: #fff;
+    box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.586);
+}
+.btn_fixed button:hover{
+    background: rgba(0, 255, 255, 0.4);
+    transform: translateY(-6px);
+    
+}
+
+/* Javascript */
+.parent_btn{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+.parent_btn button{
+    padding: 0.5rem 1rem;
+    font-size: 17px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0.471);
+    color: #fff;
+    transform: translateX(0px);
+    transition: all 0.5s ease;
+}
+.parent_btn button:hover{
+    background: rgba(128, 128, 128, 0.406);
+    transform: translateX(7px);
+}
+.shop{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    
+    /* border: 1px solid black; */
+}
+.shop_title{
+    width: 100%;
+    text-align: center;
+}
+.shop_title h2{
+    font-size: 40px;
+    color: #fff;
+}
+form{
+    padding-top: 5rem;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+form input {
+    margin: 1rem;
+    padding: 0.5rem 4rem;
+    border: 1px solid transparent;
+    outline: 4px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+form input:focus{
+    outline: 4px solid rgba(0, 255, 255, 0.273);
+}
+form input::placeholder{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+form input:not(:placeholder-shown):invalid{
+    background-image: url("./Images/errorImg.LOGO.jpg");
+    background-position: calc(90%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;    
+}
+form input:not(:placeholder-shown):valid{
+    background-image: url("./Images/trueImg.LOGO.jpg");
+    background-position: calc(90%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;    
+}
+.password_age{
+    padding-top: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;   
+}
+.password_age input{
+    margin: 1rem;
+    padding: 0.5rem 4rem;
+    border: 1px solid transparent;
+    outline: 4px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+.password_age input:focus{
+    outline: 4px solid rgba(0, 255, 255, 0.273);
+}
+.password_age input::placeholder{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.password_age input:not(:placeholder-shown):invalid{
+    background-image: url("./Images/errorImg.LOGO.jpg");
+    background-position: calc(90%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;    
+}
+.password_age input:not(:placeholder-shown):valid{
+    background-image: url("./Images/trueImg.LOGO.jpg");
+    background-position: calc(90%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid black;    
+}
+.form_btns{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.form_btns button{
+    padding: 0.5rem 2rem;
+    font-size: 20px;
+    border: 1px solid transparent;
+    background: rgba(128, 128, 128, 0.509);
+    transform: translateX(0px);
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+.form_btns button:hover{
+    transform: translateX(7px);
+    background: rgba(0, 0, 0, 0.437);
+    color: #fff;
+}
+.cost{
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.cost_title{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;   
+}
+.new{
+    width: 200px;
+    height: 50vh;
+    background: rgba(0, 0, 0, 0.281);
+    color: #fff;
+    text-align: center;
+    padding: 0.2rem;
+    border-radius: 10px;
+}
+.new h3{
+    padding-top: 1rem;
+}
+.selects{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+select{
+    width: 60%;
+    height: 10%;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    outline: 3px solid transparent ;   
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+.selects button{
+    width: 17%;
+    background: grey;
+    color: black;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-size: 17px;
+}
+select:focus{
+    outline: 3px solid rgba(0, 255, 255, 0.4);
+}
+.qoraUchun{
+    background: black;
+    color: #fff;
+}
+.greyUchun{
+    background-color: grey;
+    color: #fff;
+}
+.greyUchun option{
+    color: #fff;
+}
+.oqUchun{
+    background: #fff;
+    color: #000;
+}
+.oqUchun option{
+    color: #000;
+}
+.cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    display: none;      
+}
+.cards .card{
+    background: rgba(0, 0, 0, 0.389);
+    padding: 0.7rem;
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 30px 30px black;
+}
+.cards .card img{
+    width: 80%;
+}
+.cards .card h3{
+    padding-top:1.5rem;
+}
+#yopish{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 17px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.302);
+    color: #fff;
+    transition: 0.5s ease;
+}
+#yopish:hover{
+    background: #fff;
+    color: #000;
+}

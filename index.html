@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./normalize.min.css">
+</head>
+<body>
+      <header>
+        <nav class="nav" id="nav">
+            <div class="nav_btns">
+                <button id="televizor">Televizor</button>
+                <button id="holodilnik">Muzlatgich</button>
+            </div>
+            <div class="result">
+            </div>
+            <div class="btn_fixed">
+                <button class="_btn_fixed_btn" id="korzina">Korzinka</button>
+            </div>
+        </nav>
+      </header>  
+    
+      <main>
+        <section>
+            <div class="container">
+                <div class="shop" id="shop">
+                    <div class="shop_title">
+                        <h2>Sotib olish </h2>
+                    </div>
+                    <form autocomplete="off" name="form" id="form">
+                        <input type="text" id="input_name" name="form" form="form" placeholder="Ismingizni kiriting" required>
+                        <input type="email" id="input_email" name="form" form="form" placeholder="E-mailingizni kiriting" required>
+                    </form>
+                    <div class="password_age" >
+                        <input name="form" id="input_age" form="form" type="number" min="18" max="100" placeholder="Yosh" required>
+                        <input name="form" form="form" id="input_password" type="password" maxlength="20" placeholder="Parolingizni kiriting" required>
+                    </div>
+                    <div class="form_btns">
+                        <button id="form_btn"></button>
+                      </div>
+                    </div>
+                
+                  
+            </div>
+        </section>
+        <section>
+            <div class="cost" id="cost">
+                <div class="cost_title">
+                    <div class="new">
+                        <h3>Ismi = <span id="name_tel"></span></h3>
+                        <h3>Rangi = <span id="new_rangi"> </span> </h3>
+                        <h3>Dyumi = <span id="new_dyum"></span></h3>
+                        <h3>Narxi = <span id="new_cost"></span></h3>
+                    </div>
+                    <div class="selects">
+                        <select name="select" id="select" class="select">
+                            <option value="Rang tanlang" selected disabled>Rang_Tanlang</option>
+                            <option value="black">Qora</option>
+                            <option value="white">Oq</option>
+                            <option value="grey">Kulrang</option> 
+                        </select>
+                        <a href="#nav" id="harid">Tugatish</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="cards" id="cards">
+                    <div class="card" id="card">
+                        <img src="./Images/Website-Designa.png" id="card_img" alt="">
+                        <img src="./Images/Holodilnik.jpg" style="display: none;" id="holodilnik_img" alt="">
+                        <h2><span id="names"></span> hususiyatlari va imkoniyatlari</h2>
+                        <h3>Dyumi = <span id="dyumes"></span></h3>
+                        <h3 id="hotiras">Xotirasi va qushimcha = <span id="hotira"></span></h3>
+                        <h3>Mobilelash = <span id="mobile"></span></h3>
+                        <h3> Qushimcha = <span id="qushimcha"></span></h3>
+                        
+                        <a href="#nav"><button class="yop" id="yopish">Yopish</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
